@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 interface Props {
   children: ReactNode;
@@ -8,7 +9,7 @@ interface Props {
 const Alert = ({ children, onClose }: Props) => {
   return (
     <div className="alert alert-primary alert-dismissible">
-      Alert
+      {children}
       <button
         type="button"
         className="btn-close"
