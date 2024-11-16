@@ -1,10 +1,9 @@
-import ListGroup from "./components/ListGroup/ListGroup";
+import { FaCalendarMinus } from "react-icons/fa";
 
 function App() {
-  const items = ["New York", "Los Angeles", "San francisco"];
   return (
     <div>
-      <ListGroup heading="Miami" items={items} onSelectItem={() => {}} />
+      <FaCalendarMinus color="green" size="50" />
     </div>
   );
 }
