@@ -1,11 +1,14 @@
-import Like from "./components/Like";
+import { useState } from "react";
 
 function App() {
-  return (
-    <div>
-      <Like onClick={console.log("clicked")} />
-    </div>
-  );
+  const [person, setPerson] = useState({
+    firstName: "",
+    lastName: "",
+  });
+
+  const [isLoading, setLoading] = useState(false);
+
+  return <div></div>;
 }
 
 export default App;
